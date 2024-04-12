@@ -132,3 +132,19 @@ tr> :first-child {
 tr> :last-child {
     text-align: right;
 }
+
+a {
+    font-style: normal;
+    color: black;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+mark {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
