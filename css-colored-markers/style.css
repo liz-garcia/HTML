@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.colored-markers {
+    width: 200px;
+    height: 35px;
+    margin: 15px auto;
+    display: flex;
+    border-radius: 25px 5px 5px 25px;
+    box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.65);
+}
+
+#red {
+    background-image:
+        linear-gradient(rgb(172, 0, 0), rgb(217, 121, 121) 40%, rgb(246, 144, 144), rgb(217, 121, 121) 60%, rgb(172, 0, 0)),
+        linear-gradient(to bottom, rgba(146, 3, 3, 0.85) 1%, rgb(201, 45, 45) 20%, rgb(255, 101, 101) 45%, rgb(255, 101, 101) 55%, rgb(201, 45, 45) 80%, rgba(146, 3, 3, 0.85) 99%);
+    background-blend-mode: overlay;
+}
+
+
+#green {
+    background-image:
+        linear-gradient(rgb(39, 126, 59), rgb(121, 217, 121) 40%, rgb(144, 246, 144), rgb(121, 217, 121) 60%, rgb(39, 126, 59)),
+        linear-gradient(to bottom, rgba(3, 146, 3, 0.85) 1%, rgb(55, 170, 55) 20%, rgb(101, 255, 101) 45%, rgb(101, 255, 101) 55%, rgb(55, 170, 55) 80%, rgba(3, 146, 3, 0.85) 99%);
+    background-blend-mode: overlay;
+}
+
+#blue {
+    background-image:
+        linear-gradient(rgb(39, 59, 126), rgb(121, 121, 217) 40%, rgb(144, 144, 246), rgb(121, 121, 217) 60%, rgb(39, 59, 126)),
+        linear-gradient(to bottom, rgba(3, 3, 146, 0.85) 1%, rgb(55, 55, 170) 20%, rgb(101, 101, 255) 45%, rgb(101, 101, 255) 55%, rgb(55, 55, 170) 80%, rgba(3, 3, 146, 0.85) 99%);
+    background-blend-mode: overlay;
+}
+
+.cap {
+    height: inherit;
+    width: 25%;
+}
+
+.sleeve {
+    border-left: 10px double black;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: inherit;
+    width: 70%;
+}
