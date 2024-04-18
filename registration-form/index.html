@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <main>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information.</p>
+
+        <!-- Form -->
+        <form action="#" method="post">
+
+            <!-- First section: Personal info -->
+            <section id="personalInfoSection">
+                <!-- First name -->
+                <label for="firstName">
+                    Enter your first name:
+                </label>
+                <input type="text" id="firstName" name="firstName">
+
+                <!-- Last name -->
+                <label for="lastName">
+                    Enter your last name:
+                </label>
+                <input type="text" id="lastName" name="lastName">
+
+                <!-- Email -->
+                <label for="email">
+                    Enter your email:
+                </label>
+                <input type="email" name="email" id="email">
+
+                <!-- Password -->
+                <label for="password">
+                    Create a new password:
+                </label>
+                <input type="password" name="password" id="password">
+            </section>
+
+            <hr>
+
+            <!-- Second section: Account Type -->
+            <section id="accountTypeSection">
+                <p>Account type (required):</p>
+                <!-- Personal account -->
+                <input type="radio" name="accountType" value="personal" id="personalAccount">
+                <label for="personalAccount">Personal</label>
+                <!-- Business account -->
+                <input type="radio" name="accountType" value="business" id="businessAccount">
+                <label for="businessAccount">Business</label>
+            </section>
+
+            <hr>
+
+            <!-- Third section: Profile Info -->
+            <section id="profileInfoSection">
+                <!-- Profile picture -->
+                <label for="profilePicture">
+                    Upload a profile picture:
+                </label>
+                <input type="file" name="profilePicture" id="profilePicture">
+
+                <!-- Age (in years) -->
+                <label for="age">
+                    Input your age (years):
+                </label>
+                <input type="number" name="age" id="age">
+
+                <!-- Profile Bio -->
+                <label for="bio">
+                    Provide a bio:
+                </label>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="I like coding on the beach..."></textarea>
+            </section>
+
+            <hr>
+
+            <!-- Extra section: Survey -->
+            <section id="surveySection">
+                <!-- Survey -->
+                <label for="howDidYouHear">
+                    How did you hear about us?:
+                </label>
+                <select name="howDidYouHear" id="howDidYouHear">
+                    <option value="" disabled selected>
+                        (select one)
+                    </option>
+                    <option value="freeCodeCamp-news">
+                        freeCodeCamp News
+                    </option>
+                    <option value="freeCodeCamp-youtube Channel">
+                        freeCodeCamp YouTube Channel
+                    </option>
+                    <option value="freeCodeCamp-forum">
+                        freeCodeCamp Forum
+                    </option>
+                    <option value="others">
+                        Others
+                    </option>
+                </select>
+            </section>
+
+            <!-- Final section: Legal -->
+            <!-- Legal Term and Conditions -->
+            <section id="legalSection">
+                <input type="checkbox" name="legalTerms" id="legalTerms" value="">
+                <label for="legalTerms">
+                    I accept the <em>terms and conditions</em>.
+                </label>
+            </section>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

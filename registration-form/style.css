@@ -1,0 +1,44 @@
+body {
+    width: 80vw;
+    background-color: #1B1B32;
+    font: normal 16px Helvetica, sans-serif;
+    color: whitesmoke;
+    line-height: 1.5;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+form {
+    margin: 1rem auto;
+    width: 70%;
+}
+
+section {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 0.5rem;
+}
+
+label {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+input, textarea {
+    background-color: #0A0A23;
+    border: none;
+}
+
+input {
+    text-align: center;
+    display: block;
+    line-height: 2;
+}
+
+hr {
+    width: 100%;
+}
