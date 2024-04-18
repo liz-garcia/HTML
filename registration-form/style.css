@@ -13,6 +13,10 @@ form {
     width: 70%;
 }
 
+form textarea, input[type="text"], [type="number"], input[type="password"] {
+    color: white;
+}
+
 section {
     display: flex;
     margin-top: 1.5rem;
