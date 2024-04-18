@@ -14,7 +14,7 @@
         <p>Please fill out this form with the required information.</p>
 
         <!-- Form -->
-        <form action="#" method="post">
+        <form action="https://register-demo.freecodecamp.org" method="post">
 
             <!-- First section: Personal info -->
             <section id="personalInfoSection">
@@ -24,25 +24,25 @@
                 <label for="firstName">
                     Enter your first name:
                 </label>
-                <input type="text" id="firstName" name="firstName">
+                <input type="text" id="firstName" name="firstName" required>
 
                 <!-- Last name -->
                 <label for="lastName">
                     Enter your last name:
                 </label>
-                <input type="text" id="lastName" name="lastName">
+                <input type="text" id="lastName" name="lastName" required>
 
                 <!-- Email -->
                 <label for="email">
                     Enter your email:
                 </label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
 
                 <!-- Password -->
                 <label for="password">
                     Create a new password:
                 </label>
-                <input type="password" name="password" id="password" placeholder="Please insert a safe password here." maxlength="15" required autocomplete="on" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,15}" title="Password must be between 8-15 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character (!@#$%^&*()).">
+                <input type="password" name="password" id="password" placeholder="Please insert a safe password here." autocomplete="on" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,15}" title="Password must be between 8-15 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character (!@#$%^&*())." required >
             </section>
 
             <hr>
