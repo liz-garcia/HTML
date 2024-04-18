@@ -18,6 +18,8 @@
 
             <!-- First section: Personal info -->
             <section id="personalInfoSection">
+                <h2>Personal information</h2>
+
                 <!-- First name -->
                 <label for="firstName">
                     Enter your first name:
@@ -47,19 +49,24 @@
 
             <!-- Second section: Account Type -->
             <section id="accountTypeSection">
-                <p>Account type (required):</p>
-                <!-- Personal account -->
-                <input type="radio" name="accountType" value="personal" id="personalAccount">
-                <label for="personalAccount">Personal</label>
-                <!-- Business account -->
-                <input type="radio" name="accountType" value="business" id="businessAccount">
-                <label for="businessAccount">Business</label>
+                <h2>Account Type</h2>
+                <p>Enter your Account type (required):</p>
+                <div id="accountTypeInput">
+                    <!-- Personal account -->
+                    <input type="radio" name="accountType" value="personal" id="personalAccount">
+                    <label for="personalAccount">Personal</label>
+                    <!-- Business account -->
+                    <input type="radio" name="accountType" value="business" id="businessAccount">
+                    <label for="businessAccount">Business</label>
+                </div>
             </section>
 
             <hr>
 
             <!-- Third section: Profile Info -->
             <section id="profileInfoSection">
+                <h2>Public Profile</h2>
+
                 <!-- Profile picture -->
                 <label for="profilePicture">
                     Upload a profile picture:
@@ -76,7 +83,8 @@
                 <label for="bio">
                     Provide a bio:
                 </label>
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="I like coding on the beach..."></textarea>
+                <textarea name="bio" id="bio" cols="30" rows="10"
+                    placeholder="I like coding on the beach..."></textarea>
             </section>
 
             <hr>
@@ -85,7 +93,7 @@
             <section id="surveySection">
                 <!-- Survey -->
                 <label for="howDidYouHear">
-                    How did you hear about us?:
+                    😊 How did you hear about us?:
                 </label>
                 <select name="howDidYouHear" id="howDidYouHear">
                     <option value="" disabled selected>
@@ -109,10 +117,12 @@
             <!-- Final section: Legal -->
             <!-- Legal Term and Conditions -->
             <section id="legalSection">
-                <input type="checkbox" name="legalTerms" id="legalTerms" value="">
-                <label for="legalTerms">
-                    I accept the <em>terms and conditions</em>.
-                </label>
+                <div>
+                    <input type="checkbox" name="legalTerms" id="legalTerms" value="">
+                    <label for="legalTerms">
+                        I accept the <a href="#" target="_blank"><em>terms and conditions</em></a>.
+                    </label>
+                </div>
             </section>
 
             <!-- Submit Button -->
