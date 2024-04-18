@@ -42,7 +42,7 @@
                 <label for="password">
                     Create a new password:
                 </label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" placeholder="Please insert a safe password here." maxlength="15" required autocomplete="on" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,15}" title="Password must be between 8-15 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character (!@#$%^&*()).">
             </section>
 
             <hr>

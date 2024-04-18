@@ -10,12 +10,22 @@ body {
 
 form {
     margin: 1rem auto;
-    width: 70%;
+    width: 80%;
 }
 
-form textarea, input[type="text"], [type="number"], input[type="password"] {
+hr {
+    width: 100%;
+}
+
+a {
     color: white;
 }
+
+a:hover {
+    color: cornflowerblue;
+}
+
+/* ------------ Form sections ------------ */
 
 section {
     display: flex;
@@ -34,22 +44,6 @@ label {
     margin-bottom: 0.25rem;
     text-align: left;
     text-transform: capitalize;
-}
-
-input,
-textarea {
-    margin-bottom: 0.5rem;
-    background-color: #0A0A23;
-    border: none;
-}
-
-input {
-    text-align: center;
-    line-height: 2;
-}
-
-hr {
-    width: 100%;
 }
 
 #accountTypeSection {
@@ -72,6 +66,70 @@ hr {
     line-height: 2.5rem;
 }
 
-a {
-    color: white;
+/* ------------ Input areas ------------ */
+
+input {
+    text-align: center;
+    line-height: 2;
+}
+
+input,
+textarea {
+    margin-bottom: 0.5rem;
+    background-color: #0A0A23;
+    border: none;
+}
+
+/* ------- Input, text and placeholders ------- */
+
+textarea, input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="file"] {
+    color: whitesmoke;
+    padding: 0.25rem;
+    font-size: 0.90rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+}
+
+textarea, input[type="file"] {
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+input::placeholder, input[type="file"]::placeholder {
+    color: cornflowerblue;
+    padding: 0.5rem;
+    font-style: italic;
+    opacity: 95%;
+}
+
+textarea::placeholder {
+    color: cornflowerblue;
+    font-style: italic;
+    opacity: 95%;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+/* Select, Radio and Choice inputs */
+#accountTypeInput input[type="radio"], #accountTypeInput label, select, input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* ------- Submit button ------- */
+button {
+    background-color: #0A0A23;
+    border-radius: 0.35rem;
+    border: 1px #0A0A23 solid;
+    padding: 0.75rem 1.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    color: #0A0A23;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
 }
