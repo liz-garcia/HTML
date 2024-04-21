@@ -25,31 +25,32 @@
         <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="POST">
             <section role="region" aria-labelledby="student-info">
                 <h2 id="student-info">Student info</h2>
-                    <div class="info">
-                        <label for="name">
-                            Name:
-                        </label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="info">
-                        <label for="email">
-                            Email:
-                        </label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="info">
-                        <label for="birth-date">
-                            D.O.B.<span class="sr-only">(Date of Birth)</span>
-                        </label>
-                        <input type="date" name="birth-date" id="birth-date">
-                    </div>
+                <div class="info">
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="info">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="info">
+                    <label for="birth-date">
+                        D.O.B.<span class="sr-only">(Date of Birth)</span>
+                    </label>
+                    <input type="date" name="birth-date" id="birth-date">
+                </div>
             </section>
             <section role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">HTML Questions</h2>
                 <div class="question-block">
                     <p>1</p>
                     <fieldset name="question" class="question">
-                        <legend>The legend element represents a caption for the content of its parent fieldset element.</legend>
+                        <legend>The legend element represents a caption for the content of its parent fieldset element.
+                        </legend>
                         <ul class="answers-list">
                             <li>
                                 <label for="q1-a1">
@@ -69,7 +70,8 @@
                 <div class="question-block">
                     <p>2</p>
                     <fieldset name="question" class="question">
-                        <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id.</legend>
+                        <legend>A label element nesting an input element is required to have a for attribute with the
+                            same value as the input's id.</legend>
                         <ul class="answers-list">
                             <li>
                                 <label for="q2-a1">
@@ -89,9 +91,41 @@
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
+                <div class="form-row">
+                    <div class="question-block">
+                        <label for="css-q1">
+                            CSS related question #1?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <select name="css-q1" id="css-q1" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-q2">
+                            CSS related question #2?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="css-q2" id="css-q2" cols="30" rows="5"
+                            placeholder="Please enter your answer here..."></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 
 </html>
