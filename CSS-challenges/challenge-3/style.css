@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #364371;
+}
+
+#wrap {
+    width: 90vw;
+}
+
+#wrap > * {
+    display: inline-block;
+}
+
+#nav {
+    background-color: #B0CFFD;
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+
+#content {
+    width: 70%;
+    background-color: #5B7FBD;
+}
+
+/* .copyright {
+    display: relative;
+    top: 100px;
+} */
